@@ -1,31 +1,30 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/blog your pathPrefix should be "blog"
-  siteTitle: 'Maggie Appleton', // Navigation and Site Title
+  siteTitle: 'Radical Data Project', // Navigation and Site Title
   siteTitleAlt:
-    'Maggie Appleton makes visual explanations about technology, culture, and programming', // Alternative Site title for SEO
-  siteTitleShort: 'Maggie_Appleton', // short_name for manifest
-  siteUrl: 'https://maggieappleton.com', // Domain of your site. No trailing slash!
+    'Radical Data reimagine data science as a tool of citizens and communities to counter injustice and imagine positive futures', // Alternative Site title for SEO
+  siteTitleShort: 'Radical_Data', // short_name for manifest
+  siteUrl: 'https://radicaldata.org', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/favicon-ma.svg', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
-    'Maggie Appleton is an art director, anthropologist, and metaphor-making illustrator. This is her digital garden for growing visual explanations about technology, culture, and programming',
-  author: 'Maggie Appleton', // Author for schemaORGJSONLD
-  organization: 'Mappleton LLC',
+    'Radical Data reimagine data science as a tool of citizens and communities to counter injustice and imagine positive futures',
+  author: 'Jo Kroese', // Author for schemaORGJSONLD
+  organization: 'Radical Data',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@mappletons', // Twitter Username
-  ogSiteName: 'Maggie Appleton', // Facebook Site Name
-  ogLanguage: 'en_US',
-  googleAnalyticsID: 'UA-45097160-1',
+  userTwitter: '@radical_data', // Twitter Username
+  ogSiteName: 'Radical Data Project', // Facebook Site Name
+  ogLanguage: 'en_UK',
+  // googleAnalyticsID: 'blank',
 
   // Manifest and Progress color
-  themeColor: '#FD9C4B',
+  themeColor: '#d49c94',
   backgroundColor: '#FFFDFD',
 
   // Social component
-  twitter: 'https://twitter.com/mappletons/',
-  twitterHandle: '@mappletons',
-  github: 'https://github.com/maggieappleton/',
-  dribbble: 'https://dribbble.com/mappleton',
-  instagram: 'https://www.instagram.com/maggieappleton/',
+  twitter: 'https://twitter.com/radical_data/',
+  twitterHandle: '@radical_data',
+  github: 'https://github.com/radicaldataproject/',
+  instagram: 'https://www.instagram.com/radicaldataproject/',
 }

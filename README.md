@@ -1,6 +1,6 @@
-# Maggie's Internet Space
+# [Radical Data Project Website](radicaldata.org)
 
-### [maggieappleton.com](https://maggieappleton.com)
+Based on [maggieappleton.com](https://maggieappleton.com).
 
 ## Tech Stack
 

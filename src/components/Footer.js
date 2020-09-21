@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { fonts } from '../lib/typography'
 import SubscribeForm from './Forms/Subscribe'
-import { Twitter, GitHub, Instagram, Dribbble } from './Social'
+import { Twitter, GitHub, Instagram } from './Social'
 import Container from './Container'
 
 const Footer = ({ author, noSubscribeForm }) => (
@@ -32,12 +32,11 @@ const Footer = ({ author, noSubscribeForm }) => (
             opacity: 0.7;
           `}
         >
-          {author && `${author} \u00A9 ${new Date().getFullYear()}`}
+          {/* {`Have a good ${new Date().getDay()}`} */}
         </div>
         <div>
           <Twitter />
           <GitHub />
-          <Dribbble />
           <Instagram />
         </div>
       </div>

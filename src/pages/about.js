@@ -99,10 +99,9 @@ const theme = useTheme()
       >
         <div className="header">
         <div className="headerText">
-            <h1>Maggie Appleton</h1>
+            <h1>Radical Data Project</h1>
             <h2>
-              Anthropologist, art director, illustrator, metaphor designer, and
-              mediocre developer
+              Reimagining, creating, queering, affirming, theorising, acting
             </h2>
             <Img
               style={{
@@ -112,36 +111,46 @@ const theme = useTheme()
               }}
               fluid={data.venn.childImageSharp.fluid}
             />
+            <h2>
+              What is the Radical Data Project?
+            </h2>
             <p>
-              I sit in the middle of a few odd venn diagrams – illustration,
-              anthropology, and technology are at the core of everything I make.{' '}
+              The Radical Data Project is a research project that is also researching what it is.
             </p>
             <p>
-              Combining these into something coherent is a weird and ongoing
-              challenge.
+              There is a goal. We want to imagine a data science that works for citizens and communities instead of destabilising democracies and selling us more shoes.
             </p>
             <p>
-              My work at{' '}
-              <a
-                href="https://egghead.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                egghead
-              </a>
+              But RDP involves working out how to do that. We think it involves looking at what other projects are out there, working out the connections between them and publishing our findings.
+              We think it very likely involves our own interventions. We think it works across disciplinary boundaries such as art, activism and social science.
+              
               {' '}involves designing visual metaphors for invisible, complicated
               software concepts.
             </p>
+            <h2>
+              Who are the Radical Data Project?
+            </h2>
             <p>
-              On the side I'm always working on{' '}
-              <Link to="/essays">illustrated essays</Link> that explore the
-              cultural side of digital technology.
+              The Radical Data Project was initially setup by{' '}
+              <a
+                href="https://jokroese.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jo Kroese
+              </a> and has since grown to include a range of artists, writers, developers and researchers.
+              If you'd like to get involved, please get in touch.
+            </p>
+            <h2>
+              What can I find on this site?
+            </h2>
+            <p>
+              The <Link to="/garden"> digital garden</Link> is where ideas start to grow.
+              Eventually, they may grow or combine with other ideas into something that justifies a more static, 
+              joined-up piece of writing in <Link to="/articles">articles</Link>.
             </p>
             <p>
-              In my
-              <Link to="/garden"> digital garden of notes</Link> you'll find a
-              good amount of linguistics, cognitive metaphors, cultural
-              speculation, and tool nerding.
+              There is also a selection of the <Link to="/projects">projects</Link> we have worked on as well as a section of <Link to="/bookshelf">book summaries</Link>.
             </p>
           </div>
           <div>

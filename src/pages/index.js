@@ -44,7 +44,7 @@ const Hero = () => {
             }
           `}
         >
-          Maggie Appleton
+          Radical Data
         </h1>
         <h2
           css={css`
@@ -59,8 +59,7 @@ const Hero = () => {
               line-height: ${rhythm(1.1)};
           `}
         >
-          Helps explain technology, anthropology, and programming through
-          illustration.
+          Reimagining data science for citizens
         </h2>
         <h4
           css={css`
@@ -76,14 +75,7 @@ const Hero = () => {
             }
           `}
         >
-          Art Director, Metaphor Designer & Anthropological All-Rounder at{' '}
-          <a
-            href="https://egghead.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            egghead.io
-          </a>
+          Social justice, art and activism
         </h4>
       </Container>
     </section>
@@ -311,9 +303,9 @@ export default function Index({
           </section>
         </section>
 
-        {/* ------------------ Essays Section-----------------  */}
+        {/* ------------------ Articles Section-----------------  */}
         <section className="essays">
-          <TitleSectionLink to="/essays">Illustrated Essays</TitleSectionLink>
+          <TitleSectionLink to="/essays">Articles</TitleSectionLink>
           <div className="essaysGrid">
             {essaysQuery.edges.map(({ node: essay }) => (
               <Link
@@ -352,14 +344,14 @@ export default function Index({
           </div>
 
           <SmallSectionLink float="right" to="/essays" aria="Read More Essays">
-            Read More Essays
+            Read More Articles
           </SmallSectionLink>
         </section>
 
         {/* ------------ Illustration Section ------------ */}
         <section className="illustration">
           <TitleSectionLink to="/illustration">
-            Illustration Projects
+            Radical Data Projects
           </TitleSectionLink>
           <div className="illustrationGrid">
             {illustrationQuery.edges.map(({ node: illustration }) => (
@@ -376,7 +368,7 @@ export default function Index({
             to="/illustration"
             aria="See More Illustrations"
           >
-            See More Illustrations
+            See More Projects
           </SmallSectionLink>
         </section>
 

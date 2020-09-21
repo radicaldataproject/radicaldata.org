@@ -1,0 +1,9 @@
+The Radical Data Project logo is a rolling, mutating thing that continually offers up new possibilities for what the project could be looking for.
+.
+The logo picks out two adjectives and sticks them together before the word 'data'. You end up with nice creations such as 'curious anti-racist data', 'hopeful searching data', 'sensuous maximal data'. Even repeating adjectives: 'queer queer data'. Watching it, you are invited to think "Ok, so what would that look like? How could I realise 'reconciliatory decolonial data'? What would a society look like if it made space for 'maximal feminist data'? How can we move towards that point?"
+.
+There are over 10,000 possible combinations, each one offering a new possibility of what radical data could mean. Hopefully, instilling an idea for a project or approach in the heads of the data scientists and artists and citizens reading this. Yep, I mean you.
+.
+Full article: http://bit.ly/2MRVnZR
+
+#radicaldata #data #datascience #datascientist #dataviz #datavisualisation #datavisualization #statistics #visuals #design #art #visualcommunication #graphicdesigninspiration #visualgraphc #eyeondesign #logo #processing #p5js #creativecoding #generative #generativeart #codeart #algorithmicart
