@@ -66,7 +66,7 @@ export default function ResourceBook(props) {
                 transition: 'all 0.4s ease-in-out',
                 opacity: '100%',
                 cursor: 'pointer',
-                h1: { color: `${theme.colors.orange}`, transition: 'all 0.4s ease-in-out', },
+                h1: { color: `${theme.colors.primary}`, transition: 'all 0.4s ease-in-out', },
               },
             })}
           >

@@ -117,7 +117,7 @@ const TitleSectionLink = props => {
           margin-bottom: 1em;
           transition: all 0.6s ease;
           &:hover {
-            color: ${theme.colors.orange};
+            color: ${theme.colors.primary};
           }
         }
       `}

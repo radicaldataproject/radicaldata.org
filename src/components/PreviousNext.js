@@ -30,7 +30,7 @@ const PreviousNext = props => {
               color: ${theme.colors.black};
             }
             svg:hover {
-              fill: ${theme.colors.orange};
+              fill: ${theme.colors.primary};
             }
           }
         }

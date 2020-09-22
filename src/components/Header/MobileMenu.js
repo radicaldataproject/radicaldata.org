@@ -108,12 +108,12 @@ const Toggle = ({ children }) => {
                 border-radius: 5px;
                 transition: all 600ms ease;
                 :hover {
-                  background: ${theme.colors.orange};
+                  background: ${theme.colors.primary};
                   color: white;
                   transition: all 600ms ease;
                 }
                 .active {
-                  background: ${theme.colors.orange};
+                  background: ${theme.colors.primary};
                   color: white;
                   transition: all 600ms ease;
                 }

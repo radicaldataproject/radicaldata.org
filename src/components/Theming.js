@@ -5,12 +5,13 @@ const themes = {
   default: {
     themeName: 'default',
     colors: {
-      primary: colors.orange,
+      primary: colors.rdp_pink,
+      primary_light: colors.rdp_light_pink,
       text: colors.black,
       bodyBg: colors.white,
       headerBg: colors.white,
       sidebarBg: colors.lightgrey,
-      link: colors.orange,
+      link: colors.primary,
       ...colors,
     },
   },

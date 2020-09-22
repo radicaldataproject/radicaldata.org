@@ -23,7 +23,7 @@ export default () => {
         to="./start"
         css={css`
           font-weight: bold;
-          color: ${theme.colors.orange} !important;
+          color: ${theme.colors.primary} !important;
         `}
         aria-label="View start here page"
       >

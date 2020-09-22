@@ -9,12 +9,12 @@ const InnerLink = props => {
     <GatsbyLink
       css={css({
         display: 'inline-block',
-        color: `${theme.colors.orange}`,
+        color: `${theme.colors.primary}`,
         borderRadius: '4px',
         lineHeight: '1em',
         transition: 'all 0.6s ease',
         ':hover, :focus': {
-          background: `${theme.colors.lightOrange}`,
+          background: `${theme.colors.primary_light}`,
           color: 'white',
           padding: '6px',
         },

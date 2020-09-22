@@ -93,7 +93,7 @@ class SignUp extends React.Component {
                 Join the newsletter
               </h2>
               <p>
-                For weekly notes on visual thinking, ethical technology, and cultural anthropology.
+                To stay up to date on how data is shaping the future of art, activism and social justice.
               </p>
             </>
           )}
@@ -117,7 +117,7 @@ class SignUp extends React.Component {
                       margin-left: 10px;
                     }
                     .field-error {
-                      color: ${theme.colors.red};
+                      color: ${theme.colors.primary_light};
                       font-size: 80%;
                     }
                     input,
@@ -170,7 +170,7 @@ class SignUp extends React.Component {
                       aria-label="your first name"
                       aria-required="false"
                       name="first_name"
-                      placeholder="Margaret Mead"
+                      placeholder="Florie"
                       type="text"
                     />
                   </label>
@@ -198,7 +198,7 @@ class SignUp extends React.Component {
                       aria-label="your email address"
                       aria-required="true"
                       name="email_address"
-                      placeholder="mead@semiotics.com"
+                      placeholder="florie@dubois.com"
                       type="email"
                     />
                   </label>

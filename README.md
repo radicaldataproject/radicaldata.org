@@ -1,4 +1,4 @@
-# [Radical Data Project Website](radicaldata.org)
+# Radical Data Project Website
 
 Based on [maggieappleton.com](https://maggieappleton.com).
 

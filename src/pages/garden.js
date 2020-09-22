@@ -136,7 +136,7 @@ const GardenPage = ({ data: { site, notesQuery } }) => {
 
         <div className="filterSection">
           
-          {/* <svg width="200px" height="30px" css={css`margin: 0 auto;`}><rect fill={theme.colors.lightOrange} width="200px" height="1px" /></svg> */}
+          {/* <svg width="200px" height="30px" css={css`margin: 0 auto;`}><rect fill={theme.colors.primary_light} width="200px" height="1px" /></svg> */}
           <div className="topicFilter">
             {filters.topicFilters.map(filter => {
               return (

@@ -30,7 +30,7 @@ const IllustrationCard = props => {
           &:hover {
             transform: scale(1.015);
             h3 {
-              color: ${theme.colors.orange};
+              color: ${theme.colors.primary};
             }
             .imgWrap {
               box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);

@@ -74,7 +74,7 @@ const TipLink = ({ noTip, children, href, ...other }) => {
           padding: 3px 0 8px 3px;
           top: -2px;
           overflow: hidden;
-          color: ${theme.colors.orange};
+          color: ${theme.colors.primary};
           vertical-align: bottom;
           transition: color .3s ease-out;
           ::before {
@@ -93,7 +93,7 @@ const TipLink = ({ noTip, children, href, ...other }) => {
           :hover::before, :focus::before {
               width: 99%;
               transition: all 500ms ease-in-out;
-              background: ${theme.colors.lightOrange};
+              background: ${theme.colors.primary_light};
           }
         `}>{children}</span>
       </LinkTooltip>
@@ -111,7 +111,7 @@ const TipLink = ({ noTip, children, href, ...other }) => {
           transition: 'all 0.5s ease',
           ':hover, :focus': {
             cursor: 'pointer',
-            color: `${theme.colors.orange}`,
+            color: `${theme.colors.primary}`,
             transition: 'all 0.6s ease',
           },
         })}
