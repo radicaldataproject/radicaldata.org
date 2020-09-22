@@ -9,6 +9,7 @@ import { useTheme } from 'components/Theming'
 
 const Book = props => {
   const theme = useTheme()
+  console.log(`author`, props.author)
   return (
       <Link to={ props.redirectTo ? `/${props.redirectTo}` : `/${props.slug}`}  aria-label={`View ${props.title}`}>
       <div
@@ -22,6 +23,7 @@ const Book = props => {
             transition: all 500ms ease;
             -webkit-box-shadow: 0px 4px 10px -5px rgba(115, 130, 140, 0.98);
             box-shadow: 0px 4px 10px -5px rgba(115, 130, 140, 0.98);
+            margin-bottom: 1em;
           }
           ${bpMaxMD} {
             padding: 0.4em;
@@ -37,7 +39,7 @@ const Book = props => {
               -webkit-box-shadow: 0px 7px 13px -7px rgba(115, 130, 140, 0.98);
               box-shadow: 0px 7px 13px -7px rgba(115, 130, 140, 0.98);
             }
-            h4 {
+            h3 {
               color: ${theme.colors.black};
             }
           }
@@ -48,19 +50,26 @@ const Book = props => {
         ) : (
           <img alt={props.title} src={props.src} />
         )}
-        <h4
+        <h3
           css={css`
             font-family: ${fonts.regularSansBold};
             color: ${theme.colors.darkGrey};
             font-weight: 200;
             margin-top: 1em;
-            margin-bottom: ${rhythm(0.2)};
+            margin-bottom: 0em;
             transition: all 700ms ease;
           `}
         >
           {props.title}
-        </h4>
-        <h6>{props.author}</h6>
+        </h3>
+        <p
+          css={css`
+          font-family: ${fonts.regularSansBold};
+          color: ${theme.colors.darkGrey};
+        `}
+        >
+          {props.author}
+        </p>
       </div>
     </Link>
   )
