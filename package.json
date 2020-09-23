@@ -1,6 +1,6 @@
 {
   "name": "radicaldata.org",
-  "description": "Reimagining data science for citizens",
+  "description": "Reimagining the future of data",
   "version": "0.0.0.9000",
   "author": "Radical Data <jo@radicaldata.org> (https://radicaldata.org)",
   "repository": "https://github.com/radicaldataproject/radicaldata.org",
@@ -22,7 +22,7 @@
     "emotion-theming": "^10.0.19",
     "formik": "^1.5.8",
     "gatsby": "^2.21.9",
-    "gatsby-cli": "^2.12.99",
+    "gatsby-cli": "^2.12.100",
     "gatsby-image": "^2.2.7",
     "gatsby-link": "^2.2.4",
     "gatsby-plugin-catch-links": "^2.1.2",

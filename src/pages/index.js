@@ -59,7 +59,7 @@ const Hero = () => {
               line-height: ${rhythm(1.1)};
           `}
         >
-          Reimagining data science for citizens
+          Reimagining the future of data by asking:
         </h2>
         <h3
           css={css`
@@ -67,7 +67,7 @@ const Hero = () => {
             font-family: ${fonts.regularSans};
             font-weight: 300;
             margin-bottom: ${rhythm(1.2)};
-            line-height: ${rhythm(1)};
+            // line-height: ${rhythm(1)};
             color: ${theme.colors.grey};
             letter-spacing: 0em;
             ${bpMaxSM} {
@@ -75,7 +75,10 @@ const Hero = () => {
             }
           `}
         >
-          Social justice, art and activism
+          <ol>
+          <li>(Protective) What can we do to reduce the harms of data?</li>
+          <li>(Positive) How can we use data to address injustice?</li>
+          </ol>
         </h3>
       </Container>
     </section>
@@ -311,7 +314,7 @@ export default function Index({
 
         {/* ------------------ Articles Section-----------------  */}
         <section className="essays">
-          <TitleSectionLink to="/essays">Articles</TitleSectionLink>
+          <TitleSectionLink to="/articles">Articles</TitleSectionLink>
           <div className="essaysGrid">
             {essaysQuery.edges.map(({ node: essay }) => (
               <Link
@@ -380,7 +383,7 @@ export default function Index({
           <SmallSectionLink
             float="right"
             to="/illustration"
-            aria="See More Illustrations"
+            aria="See More Projects"
           >
             See More Projects
           </SmallSectionLink>
@@ -389,10 +392,9 @@ export default function Index({
         {/* ------------ Books Section ------------ */}
         <section className="books">
           <span className="bookTitle">
-            <TitleSectionLink to="/bookshelf">Bookshelf Notes</TitleSectionLink>
+            <TitleSectionLink to="/bookshelf">Bookshelf</TitleSectionLink>
             <p>
-              A past and present reading collection. Complete with very loose
-              and opinionated notes.
+              A collection of notes on what we've been reading and watching.
             </p>
 
             <SmallSectionLink

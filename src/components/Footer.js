@@ -42,7 +42,7 @@ const Footer = ({ author, noSubscribeForm }) => {
             opacity: 0.7;
           `}
           >
-            {`I hope you have a beautiful ${today_name}. Do you have time to look at a leaf? Or even your thumb?`}
+            {`I hope you have a beautiful ${today_name}. Do you have time to look at a leaf? Or maybe your thumb?`}
             <br></br>
             {`If today isn't going so well, try not to worry: sometimes ${tomorrow_name}s can feel very different.`}
           </div>
