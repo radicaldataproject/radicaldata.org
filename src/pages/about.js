@@ -101,7 +101,7 @@ const theme = useTheme()
         <div className="headerText">
             <h1>Radical Data Project</h1>
             <h2>
-              Reimagining, creating, queering, affirming, theorising, acting
+              Reimagining, creating, queering, affirming, theorising, intervening.
             </h2>
             <Img
               style={{

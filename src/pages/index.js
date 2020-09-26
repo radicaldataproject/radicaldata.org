@@ -360,14 +360,14 @@ export default function Index({
             ))}
           </div>
 
-          <SmallSectionLink float="right" to="/essays" aria="Read More Essays">
+          <SmallSectionLink float="right" to="/articles" aria="Read More Articles">
             Read More Articles
           </SmallSectionLink>
         </section>
 
         {/* ------------ Illustration Section ------------ */}
         <section className="illustration">
-          <TitleSectionLink to="/illustration">
+          <TitleSectionLink to="/projects">
             Radical Data Projects
           </TitleSectionLink>
           <div className="illustrationGrid">
@@ -382,7 +382,7 @@ export default function Index({
           </div>
           <SmallSectionLink
             float="right"
-            to="/illustration"
+            to="/projects"
             aria="See More Projects"
           >
             See More Projects
