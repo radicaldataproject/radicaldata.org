@@ -9,7 +9,7 @@ import { useTheme } from 'components/Theming'
 var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var today = new Date().getDay();
 var today_name = days[today]
-var tomorrow_name = days[today+1]
+var tomorrow_name = days[(today + 1) % 7]
 
 const Footer = ({ author, noSubscribeForm }) => {
   const theme = useTheme()
