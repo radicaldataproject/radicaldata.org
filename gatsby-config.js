@@ -12,14 +12,12 @@ module.exports = {
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
-    keywords: ['Illustration, Tech'],
+    keywords: ['Data, Art, Activism, Radical'],
     canonicalUrl: config.siteUrl,
     image: config.siteLogo,
     author: {
       name: config.author,
-      minibio: `
-        Maggie Appleton is an illustrator & art director who explains technical topics through visual essays.
-      `,
+      minibio: config.siteDescription,
     },
     organization: {
       name: config.organization,
@@ -28,7 +26,7 @@ module.exports = {
     },
     social: {
       twitter: config.twitterHandle,
-      fbAppID: '',
+      fbAppID: config.siteFBAppID,
     },
   },
   plugins: [
@@ -128,9 +126,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-plausible`,
       options: {
-        trackingId: `UA-45097160-1`,
+        domain: `radicaldata.org`,
       },
     },
     {

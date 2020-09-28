@@ -12,7 +12,7 @@ module.exports = {
   author: 'Jo Kroese', // Author for schemaORGJSONLD
   organization: 'Radical Data',
 
-  // siteFBAppID: '123456789', // Facebook App ID - Optional
+  siteFBAppID: 'radicaldataproject', // Facebook App ID - Optional
   userTwitter: '@radical_data', // Twitter Username
   ogSiteName: 'Radical Data Project', // Facebook Site Name
   ogLanguage: 'en_UK',
