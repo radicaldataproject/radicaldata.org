@@ -26,7 +26,7 @@ const theme = useTheme()
           }
         }
       }
-      venn: file(relativePath: { eq: "venndiagram.png" }) {
+      venn: file(relativePath: { eq: "rd-venn-diagram.png" }) {
         childImageSharp {
           fluid(maxWidth: 450) {
             ...GatsbyImageSharpFluid
