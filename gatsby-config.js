@@ -126,12 +126,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-plausible`,
-      options: {
-        domain: `radicaldata.org`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/lib/typography`,
