@@ -92,6 +92,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-twitter',
     'gatsby-plugin-sharp',
