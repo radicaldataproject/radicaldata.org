@@ -77,17 +77,8 @@ module.exports = {
       options: {
         extensions: ['.mdx', '.md', '.markdown'],
         gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-embedder`,
-            options: {
-              customTransformers: [
-                // Your custom transformers
-              ],
-              services: {
-                // The service-specific options by the name of the service
-              },
-            },
-          },
+          { resolve: `gatsby-remark-embedder` },
+          { resolve: `gatsby-remark-numbered-footnotes` },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -99,7 +90,6 @@ module.exports = {
             },
           },
         ],
-        plugins: [`gatsby-remark-images`],
       },
     },
     'gatsby-transformer-sharp',

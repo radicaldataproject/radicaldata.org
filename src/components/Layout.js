@@ -77,6 +77,7 @@ const getGlobalStyles = theme => {
     }
     em {
       font-family: ${fonts.regularItalic};
+      font-style: normal;
     }
     mark {
       background-color: ${lighten(0.15,theme.colors.primary_light)};
