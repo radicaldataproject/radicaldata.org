@@ -135,10 +135,9 @@ const theme = useTheme()
               <a
                 href="https://jokroese.com/"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 Jo Kroese
-              </a> and has since grown to include a range of artists, writers, developers and researchers.
+              </a> and has since grown to include a range of <Link to="/contributors">contributors</Link> including artists, data scientists, designers and technologists.
               If you'd like to get involved, please get in touch.
             </p>
             <h2>

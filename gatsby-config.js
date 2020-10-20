@@ -54,6 +54,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/content/contributors`,
+        name: 'Contributors',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/content/books`,
         name: 'Books',
       },

@@ -147,7 +147,7 @@ export default function Index({
           padding-top: 0;
           display: grid;
           grid-gap: 2.2em;
-          grid-template-columns: 3fr 5fr;
+          grid-template-columns: 5fr 3fr;
           ${bpMaxMD} {
             display: flex;
             flex-direction: column;
@@ -245,6 +245,60 @@ export default function Index({
           }
         `}
       >
+
+        {/* ------------------ Articles Section-----------------  */}
+        <section className="essays">
+          <TitleSectionLink to="/articles">Articles</TitleSectionLink>
+          <div className="essaysGrid">
+            {essaysQuery.edges.map(({ node: essay }) => (
+              <Link
+                to={`/${essay.frontmatter.slug}`}
+                aria-label={`View ${essay.frontmatter.title}`}
+              >
+                <SimpleCard
+                  hover
+                  key={essay.id}
+                  css={css`
+                    font-family: ${fonts.regularSans};
+                    max-width: 350px;
+                    margin: 0 auto;
+                    padding: 0.4em 1.2em 0.8em 1.2em;
+                    h3 {
+                      color: #121F35;
+                      font-family: ${fonts.walsheimLight};
+                      font-size: 1.1em;
+                      font-weight: bold;
+                      margin-top: 0.2em;
+                      margin-bottom: 0.4em;
+                      transition: all 150ms ease;
+                      &:hover: {
+                        color: ${theme.colors.primary};
+                      }
+                    }
+                    p {
+                      color: ${theme.colors.grey};
+                      margin-top: 0;
+                      margin-bottom: 0;
+                      line-height: 1.3em;
+                      font-family: ${fonts.regularSans};
+                      font-size: ${rhythm(.6)};
+                      font-weight: 100;
+                    }
+                  `}
+                >
+                  <Img fluid={essay.frontmatter.cover.childImageSharp.fluid} />
+                  <h3>{essay.frontmatter.title}</h3>
+                  <p>{essay.frontmatter.description}</p>
+                </SimpleCard>
+              </Link>
+            ))}
+          </div>
+
+          <SmallSectionLink float="right" to="/articles" aria="Read More Articles">
+            Read More Articles
+          </SmallSectionLink>
+        </section>
+
         <section>
           {/* ------------ Garden Section ------------ */}
           <section className="garden">
@@ -310,59 +364,6 @@ export default function Index({
               Visit the Garden
             </SmallSectionLink>
           </section>
-        </section>
-
-        {/* ------------------ Articles Section-----------------  */}
-        <section className="essays">
-          <TitleSectionLink to="/articles">Articles</TitleSectionLink>
-          <div className="essaysGrid">
-            {essaysQuery.edges.map(({ node: essay }) => (
-              <Link
-                to={`/${essay.frontmatter.slug}`}
-                aria-label={`View ${essay.frontmatter.title}`}
-              >
-                <SimpleCard
-                  hover
-                  key={essay.id}
-                  css={css`
-                    font-family: ${fonts.regularSans};
-                    max-width: 350px;
-                    margin: 0 auto;
-                    padding: 0.4em 1.2em 0.8em 1.2em;
-                    h3 {
-                      color: #121F35;
-                      font-family: ${fonts.walsheimLight};
-                      font-size: 1.1em;
-                      font-weight: bold;
-                      margin-top: 0.2em;
-                      margin-bottom: 0.4em;
-                      transition: all 150ms ease;
-                      &:hover: {
-                        color: ${theme.colors.primary};
-                      }
-                    }
-                    p {
-                      color: ${theme.colors.grey};
-                      margin-top: 0;
-                      margin-bottom: 0;
-                      line-height: 1.3em;
-                      font-family: ${fonts.regularSans};
-                      font-size: ${rhythm(.6)};
-                      font-weight: 100;
-                    }
-                  `}
-                >
-                  <Img fluid={essay.frontmatter.cover.childImageSharp.fluid} />
-                  <h3>{essay.frontmatter.title}</h3>
-                  <p>{essay.frontmatter.description}</p>
-                </SimpleCard>
-              </Link>
-            ))}
-          </div>
-
-          <SmallSectionLink float="right" to="/articles" aria="Read More Articles">
-            Read More Articles
-          </SmallSectionLink>
         </section>
 
         {/* ------------ Illustration Section ------------ */}
