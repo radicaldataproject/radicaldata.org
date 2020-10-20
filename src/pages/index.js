@@ -170,7 +170,7 @@ export default function Index({
             .essaysGrid {
               display: grid;
               grid-template-columns: 1fr 1fr;
-              grid-template-rows: 1fr 1fr;
+              grid-template-rows: 1fr;
               grid-gap: 0.8em;
               margin-bottom: 1em;
               ${bpMaxSM} {
