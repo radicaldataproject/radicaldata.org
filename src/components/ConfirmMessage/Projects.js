@@ -3,7 +3,7 @@ import { css, keyframes } from '@emotion/core'
 import { fonts } from '../../lib/typography'
 import { useTheme } from '../Theming'
 
-// PleaseConfirmIllustration
+// PleaseConfirmProject
 const PaperRollOut = keyframes`
 from, 0% {
     transform: translate(10px, 80px);
@@ -74,7 +74,7 @@ const NotificationFadeIn = keyframes`
 }
 `
 // SVG
-export const PleaseConfirmIllustration = () => {
+export const PleaseConfirmProject = () => {
   const theme = useTheme()
   return (
     <div
@@ -227,7 +227,7 @@ export const PleaseConfirmIllustration = () => {
   )
 }
 
-// ThankYouIllustration
+// ThankYouProject
 const SlopeRollOut = keyframes`
 from, 0% {
 //transform: translate(0, 115px) rotate(90deg);
@@ -282,7 +282,7 @@ to, 100% {
 }
 `
 // SVG
-export const ThankYouIllustration = () => {
+export const ThankYouProject = () => {
   const theme = useTheme()
   return (
     <div
@@ -392,7 +392,7 @@ export const ThankYouIllustration = () => {
   )
 }
 
-// UnsubscribeIllustration
+// UnsubscribeProject
 const MailSlide = keyframes`
 from, 0% {
     opacity: 0;
@@ -457,7 +457,7 @@ to, 100% {
 }
 `
 // SVG
-export const UnsubscribeIllustration = (
+export const UnsubscribeProject = (
   <div
     css={css`
       .pieces {

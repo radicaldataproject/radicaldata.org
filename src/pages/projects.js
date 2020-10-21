@@ -3,9 +3,9 @@ import Layout from 'components/Layout'
 import { css } from '@emotion/core'
 import Container from 'components/Container'
 import { graphql } from 'gatsby'
-import IllustrationCard from '../components/IllustrationCard'
+import ProjectCard from '../components/ProjectCard'
 
-const IllustrationPage = ({ data: { site, illustrationQuery } }) => {
+const ProjectPage = ({ data: { site, projectQuery } }) => {
   return (
     <Layout site={site}>
       <Container
@@ -19,7 +19,7 @@ const IllustrationPage = ({ data: { site, illustrationQuery } }) => {
               margin-bottom: 0.4em;
             }
           }
-          .illustrationGrid {
+          .projectGrid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1em;
@@ -32,13 +32,13 @@ const IllustrationPage = ({ data: { site, illustrationQuery } }) => {
           <p>A selection of projects we have worked on.</p>
         </section>
         <section>
-          <div className="illustrationGrid">
-            {illustrationQuery.edges.map(({ node: illustration }) => (
-              <IllustrationCard
-                slug={illustration.frontmatter.slug}
-                title={illustration.frontmatter.title}
-                id={illustration.id}
-                fluid={illustration.frontmatter.cover.childImageSharp.fluid}
+          <div className="projectGrid">
+            {projectQuery.edges.map(({ node: project }) => (
+              <ProjectCard
+                slug={project.frontmatter.slug}
+                title={project.frontmatter.title}
+                id={project.id}
+                fluid={project.frontmatter.cover.childImageSharp.fluid}
               />
             ))}
           </div>
@@ -48,9 +48,9 @@ const IllustrationPage = ({ data: { site, illustrationQuery } }) => {
   )
 }
 
-export default IllustrationPage
+export default ProjectPage
 
-export const illustrationPageQuery = graphql`
+export const projectPageQuery = graphql`
   query {
     site {
       ...site
@@ -58,9 +58,9 @@ export const illustrationPageQuery = graphql`
         title
       }
     }
-    illustrationQuery: allMdx(
+    projectQuery: allMdx(
       filter: {
-        frontmatter: { type: { eq: "illustration" }, published: { ne: false } }
+        frontmatter: { type: { eq: "project" }, published: { ne: false } }
       }
       sort: { order: DESC, fields: frontmatter___date }
       limit: 20

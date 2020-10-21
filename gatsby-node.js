@@ -68,10 +68,10 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
 
-      illustrationQuery: allMdx(
+      projectQuery: allMdx(
         filter: {
           frontmatter: {
-            type: { eq: "illustration" }
+            type: { eq: "project" }
             published: { ne: false }
           }
         }
@@ -155,15 +155,15 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    data.illustrationQuery.edges.forEach(({ node }, i) => {
-      const { edges } = data.illustrationQuery
+    data.projectQuery.edges.forEach(({ node }, i) => {
+      const { edges } = data.projectQuery
       const prevPage = i === 0 ? null : edges[i - 1].node
       const nextPage = i === edges.length - 1 ? null : edges[i + 1].node
 
       pageRedirects(node)
       createPage({
         path: node.fields.slug,
-        component: path.resolve('./src/templates/illustrationTemplate.js'),
+        component: path.resolve('./src/templates/projectTemplate.js'),
         context: {
           id: node.id,
           prevPage,

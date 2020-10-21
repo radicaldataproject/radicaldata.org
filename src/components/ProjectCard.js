@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import { css } from '@emotion/core'
 import { rhythm } from '../lib/typography'
 
-const IllustrationCard = props => {
+const ProjectCard = props => {
   const theme = useTheme()
 
   return (
@@ -61,4 +61,4 @@ const IllustrationCard = props => {
   )
 }
 
-export default IllustrationCard
+export default ProjectCard

@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Message from '../components/ConfirmMessage/Message'
 import {
-  PleaseConfirmIllustration,
-  ThankYouIllustration,
-  UnsubscribeIllustration,
-} from '../components/ConfirmMessage/Illustrations'
+  PleaseConfirmProject,
+  ThankYouProject,
+  UnsubscribeProject,
+} from '../components/ConfirmMessage/Projects'
 
 export default ({ data: { site, allMdx, latestArticle } }) => {
   return (
@@ -14,7 +14,7 @@ export default ({ data: { site, allMdx, latestArticle } }) => {
       <div>
         <Message
           fullscreen
-          illustration={PleaseConfirmIllustration}
+          project={PleaseConfirmProject}
           title={`Great, one last thing...`}
           body={`We just sent you an email with the confirmation link. 
           **Please check your inbox!**`}
@@ -25,7 +25,7 @@ export default ({ data: { site, allMdx, latestArticle } }) => {
           <Message
             fullscreen
             key={post.id}
-            illustration={ThankYouIllustration}
+            project={ThankYouProject}
             title={`Success! Thank you!`}
             body={`In case you haven’t seen already, here’s my latest article:`}
             articleTitle={post.frontmatter.title}
@@ -36,7 +36,7 @@ export default ({ data: { site, allMdx, latestArticle } }) => {
       <div>
         <Message
           fullscreen
-          illustration={UnsubscribeIllustration}
+          project={UnsubscribeProject}
           title={`You have been unsubscribed.`}
           body={`As per your request, you have been unsubscribed from all our mailings.`}
           note={`Changed your mind? [Click here to resubscribe](#)`}

@@ -12,7 +12,7 @@ import { fonts } from '../lib/typography'
 import { bpMaxMD, bpMaxSM } from '../lib/breakpoints'
 import SimpleCard from '../components/SimpleCard'
 import Book from '../components/Book'
-import IllustrationCard from '../components/IllustrationCard'
+import ProjectCard from '../components/ProjectCard'
 
 const Hero = () => {
   const theme = useTheme()
@@ -135,7 +135,7 @@ const TitleSectionLink = props => {
 // ------- // Main Section // ---------- //
 
 export default function Index({
-  data: { site, bookQuery, illustrationQuery, essaysQuery, notesQuery },
+  data: { site, bookQuery, projectQuery, essaysQuery, notesQuery },
 }) {
   const theme = useTheme()
   return (
@@ -182,7 +182,7 @@ export default function Index({
               margin-bottom: 3em;
             }
           }
-          .illustration {
+          .project {
             margin-bottom: 1.2em;
             grid-column: 1 / 3;
             display: column;
@@ -190,7 +190,7 @@ export default function Index({
             ${bpMaxSM} {
               margin-bottom: 3em;
             }
-            .illustrationGrid {
+            .projectGrid {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
               grid-gap: 1em;
@@ -366,18 +366,18 @@ export default function Index({
           </section>
         </section>
 
-        {/* ------------ Illustration Section ------------ */}
-        <section className="illustration">
+        {/* ------------ Project Section ------------ */}
+        <section className="project">
           <TitleSectionLink to="/projects">
             Radical Data Projects
           </TitleSectionLink>
-          <div className="illustrationGrid">
-            {illustrationQuery.edges.map(({ node: illustration }) => (
-              <IllustrationCard
-                slug={illustration.frontmatter.slug}
-                title={illustration.frontmatter.title}
-                id={illustration.id}
-                fluid={illustration.frontmatter.cover.childImageSharp.fluid}
+          <div className="projectGrid">
+            {projectQuery.edges.map(({ node: project }) => (
+              <ProjectCard
+                slug={project.frontmatter.slug}
+                title={project.frontmatter.title}
+                id={project.id}
+                fluid={project.frontmatter.cover.childImageSharp.fluid}
               />
             ))}
           </div>
@@ -431,9 +431,9 @@ export const pageQuery = graphql`
       }
     }
 
-    illustrationQuery: allMdx(
+    projectQuery: allMdx(
       filter: {
-        frontmatter: { type: { eq: "illustration" }, published: { ne: false } }
+        frontmatter: { type: { eq: "project" }, published: { ne: false } }
       }
       sort: { order: DESC, fields: frontmatter___date }
       limit: 3

@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import { bpMaxSM } from '../../lib/breakpoints'
 
 export default ({
-  illustration,
+  project,
   title,
   body,
   note,
@@ -22,7 +22,7 @@ export default ({
       }
     `}
   >
-    <div>{illustration}</div>
+    <div>{project}</div>
     <h2>{title}</h2>
     {body && <Markdown>{body}</Markdown>}
     {note && (
