@@ -20,7 +20,7 @@ export default () => {
         Contributors
       </Link>
       <Link to="/organisations" aria-label="View organisations page">
-        Organisations
+        Organisations we like
       </Link>
       <Link to="/about" aria-label="View about page">
         About

@@ -13,6 +13,8 @@ import { bpMaxMD, bpMaxSM } from '../lib/breakpoints'
 import SimpleCard from '../components/SimpleCard'
 import Book from '../components/Book'
 import ProjectCard from '../components/ProjectCard'
+import InlineSignUp from '../components/Forms/InlineSignUp'
+import SignUp from '../components/Forms/Subscribe'
 
 const Hero = () => {
   const theme = useTheme()
@@ -36,15 +38,15 @@ const Hero = () => {
             font-weight: 100;
             font-size: ${rhythm(2.5)};
             line-height: ${rhythm(2.4)};
-            margin-top: 3vw;
-            max-width: ${rhythm(22)};
+            margin-top: 0;
+            // max-width: ${rhythm(22)};
             ${bpMaxSM} {
               font-size: ${rhythm(1.8)};
               line-height: ${rhythm(2.1)};
             }
           `}
         >
-          Radical Data
+          Radical Data Project
         </h1>
         <h2
           css={css`
@@ -59,27 +61,29 @@ const Hero = () => {
               line-height: ${rhythm(1.1)};
           `}
         >
-          Reimagining the future of data by asking:
+          A collective exploring the radical potential of data science.
         </h2>
         <h3
           css={css`
             margin-top: ${rhythm(1)};
-            font-family: ${fonts.regularSans};
+            // font-family: ${fonts.regularSans};
+            font-family: ${fonts.lightSans};
+            font-size: ${rhythm(0.8)};
             font-weight: 300;
-            margin-bottom: ${rhythm(1.2)};
+            font-weight: bold;
+            margin-bottom: ${rhythm(0.2)};
             // line-height: ${rhythm(1)};
             color: ${theme.colors.grey};
-            letter-spacing: 0em;
-            ${bpMaxSM} {
-              margin-bottom: ${rhythm(0.4)};
-            }
+            letter-spacing: 0em;   
           `}
         >
-          <ol>
+          Join the movement of artists, data scientists and researchers shaping the future of data, art and activism.
+          {/* <ol>
           <li>(Protective) What can we do to reduce the harms of data?</li>
           <li>(Positive) How can we use data to address injustice?</li>
-          </ol>
+          </ol> */}
         </h3>
+        <InlineSignUp></InlineSignUp>
       </Container>
     </section>
   )

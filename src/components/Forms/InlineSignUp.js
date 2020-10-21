@@ -27,7 +27,7 @@ const PostSubmissionMessage = ({ response }) => {
   )
 }
 
-class SignUp extends React.Component {
+class InlineSignUp extends React.Component {
   state = {
     submitted: false,
   }
@@ -82,7 +82,7 @@ class SignUp extends React.Component {
         <div className="formHeader">
           {!successful && (
             <>
-              <h2
+              {/* <h3
                 css={css`
                   font-family: ${fonts.lightSans};
                   font-size: ${rhythm(1)};
@@ -90,11 +90,11 @@ class SignUp extends React.Component {
                   margin-top: ${rhythm(1)};
                 `}
               >
-                Join the mailing list
-              </h2>
-              <p>
+                Join the movement of people using data to shape the future of art, activism and social justice.
+              </h3> */}
+              {/* <p>
                 To join the movement of people using data to shape the future of art, activism and social justice.
-              </p>
+              </p> */}
             </>
           )}
         </div>
@@ -159,7 +159,6 @@ class SignUp extends React.Component {
                         align-items: flex-end;
                       `}
                     >
-                      First Name
                       <ErrorMessage
                         name="first_name"
                         component="span"
@@ -187,7 +186,6 @@ class SignUp extends React.Component {
                         align-items: flex-end;
                       `}
                     >
-                      Email
                       <ErrorMessage
                         name="email_address"
                         component="span"
@@ -222,4 +220,4 @@ class SignUp extends React.Component {
   }
 }
 
-export default withTheme(SignUp)
+export default withTheme(InlineSignUp)
