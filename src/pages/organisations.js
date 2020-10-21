@@ -1,18 +1,18 @@
 import React from 'react'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import { css } from '@emotion/core'
-import ResourceCard from '../components/ResourceCard'
-import ResourceBook from '../components/ResourceBook'
+import OrganisationCard from '../components/OrganisationCard'
+import OrganisationBook from '../components/OrganisationBook'
 import {
-    resourceCourses,
-    resourceBooks,
-  } from '../../static/resourceData'
+    OrganisationCourses,
+    OrganisationPeople,
+  } from '../../static/organisationData'
 
-const ResourcesPage = () => {
+const OrganisationsPage = () => {
   const data = useStaticQuery(graphql`
-    query ResourcesPageQuery {
+    query OrganisationsPageQuery {
       site {
         ...site
         siteMetadata {
@@ -67,37 +67,38 @@ const ResourcesPage = () => {
         `}
       >
         <div className="header">
-            <h1>Resources</h1>
+            <h1>Organisations</h1>
             <p>
-            Want to improve your drawing and visual thinking skills?<br />
-These are all my personal recommendations for courses and books.
+            There are loads of organisations and people doing brilliant work with data, art and activism.
+            Here is a partial list of them.<br></br>
+            If you know of something that should be on this list, let us know {` `}
+            <Link to="https://github.com/radicaldataproject/radicaldata.org/issues">here</Link>.
             </p>
 
         </div>
 
-        <h3>Learning Platforms & Courses</h3>
+        {/* <h3>Organisations</h3> */}
             <div className="mainGrid courseGrid">
-            {resourceCourses.map((d, i) => {
-            console.log(d.recCourses)
+            {OrganisationCourses.map((d, i) => {
             return (
-              <ResourceCard
+              <OrganisationCard
                 key={i}
                 title={d.title}
                 description={d.description}
                 img={d.img}
                 cost={d.cost}
                 url={d.url}
-                recCourses={d.recCourses}
+                RecProjects={d.RecProjects}
               />
             )
           })}
             </div>
 
-            <h3>Books</h3>
+            {/* <h3>Books</h3>
             <div className="mainGrid bookGrid">
-            {resourceBooks.map((d, i) => {
+            {OrganisationPeople.map((d, i) => {
             return (
-              <ResourceBook
+              <OrganisationBook
                 key={i}
                 title={d.title}
                 description={d.description}
@@ -107,10 +108,10 @@ These are all my personal recommendations for courses and books.
               />
             )
           })}
-            </div>
+            </div> */}
       </Container>
     </Layout>
   )
 }
 
-export default ResourcesPage
+export default OrganisationsPage

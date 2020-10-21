@@ -39,7 +39,7 @@ import {
   FullWidth,
 } from './ImageStyles'
 import Book from '../Book'
-import ResourceBook from './ResourceBook'
+import OrganisationBook from './OrganisationBook'
 import Footnote from './Footnote'
 import {
   ResearchItem,
@@ -87,7 +87,7 @@ export default {
   ReadNext: props => <ReadNext {...props} />,
   SimpleCard: props => <SimpleCard {...props} />,
   Book: props => <Book {...props} />,
-  ResourceBook: props => <ResourceBook {...props} />,
+  OrganisationBook: props => <OrganisationBook {...props} />,
   ImageFrame: props => <ImageFrame {...props} />,
   FullWidth: props => <FullWidth {...props} />,
   FullWidth2Col: props => <FullWidth2Col {...props} />,

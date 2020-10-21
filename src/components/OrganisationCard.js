@@ -1,10 +1,10 @@
 import React from 'react'
 import { css } from '@emotion/core'
 import { bpMinSM } from '../lib/breakpoints'
-import RecCourses from './RecCoursesCard'
+import RecProjects from './RecProjectsCard'
 import { useTheme } from 'components/Theming'
 
-export default function ResourceCard(props) {
+export default function OrganisationCard(props) {
 const theme = useTheme()
   
   return (
@@ -78,7 +78,7 @@ const theme = useTheme()
             <p class='description'>{props.description}</p>
             <h5>{props.cost}</h5>
 
-            {props.recCourses && <RecCourses props={props.recCourses} />}
+            {props.RecProjects && <RecProjects props={props.RecProjects} />}
           </div>
         </div>
         </div>

@@ -160,8 +160,8 @@ const theme = useTheme()
             }}
             fluid={data.profilePic.childImageSharp.fluid}
           />
-          <a href='/faq'><div className="faqBlock"><h2>Have questions?<br />I have an FAQ</h2></div></a>
-          <a href='/resources'><div className="faqBlock"><h2>Want to improve your illustration skills?</h2><h4>I have a recommended resources page</h4></div></a>
+          <a href='/contributors'><div className="faqBlock"><h2>Meet the roots!</h2><h4>Radical Data are a team of illustrators, designers, data scientists and technologists.</h4></div></a>
+          <a href='/organisations'><div className="faqBlock"><h2>Want to see what other organisations are out there?</h2><h4>We have collected some of the best projects at the intersection of data, art and activism.</h4></div></a>
           </div>
           
         </div>

@@ -19,6 +19,9 @@ export default () => {
       <Link to="/contributors" aria-label="View contributors page">
         Contributors
       </Link>
+      <Link to="/organisations" aria-label="View organisations page">
+        Organisations
+      </Link>
       <Link to="/about" aria-label="View about page">
         About
       </Link>

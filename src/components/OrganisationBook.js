@@ -1,12 +1,10 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { bpMaxSM } from '../../lib/breakpoints'
-import { useTheme } from '../Theming'
+import { useTheme } from 'components/Theming'
+import { bpMaxSM } from '../lib/breakpoints'
 
-
-export default function ResourceBook(props) {
-const theme = useTheme()
-
+export default function OrganisationBook(props) {
+  const theme = useTheme()
   return (
     <>
       <a href={props.url}>

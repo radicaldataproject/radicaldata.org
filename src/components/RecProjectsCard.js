@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { css } from '@emotion/core'
 import downArrow from './downArrow.svg'
 
-function RecCourses(props) {
+function RecProjects(props) {
   const [isDowndownOpen, setDropdown] = useState(false)
 
   const toggleDropdown = () => {
@@ -36,7 +36,7 @@ function RecCourses(props) {
       })}>
       <hr />
       <button
-        aria-label='Click to view recommended courses'
+        aria-label='Click to view recommended projects'
         onClick={toggleDropdown}>
         <img alt='down arrow' src={downArrow} />
         <h5
@@ -46,7 +46,7 @@ function RecCourses(props) {
             margin: '0',
             paddingLeft: '10px',
           })}>
-          Recommended Courses
+          Recommended Projects
         </h5>
       </button>
 
@@ -73,7 +73,7 @@ function RecCourses(props) {
               <a href={rc.url}>
                 <p>{rc.title}</p>
               </a>
-              <h5>by {rc.instructor}</h5>
+              <h5>{rc.description}</h5>
             </div>
           ))
         : null}
@@ -81,4 +81,4 @@ function RecCourses(props) {
   )
 }
 
-export default RecCourses
+export default RecProjects
